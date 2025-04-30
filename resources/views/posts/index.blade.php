@@ -36,6 +36,9 @@
     <div class='paginate'>
       {{ $posts->links() }}
     </div>
+    <div class='loginuser'>
+      <p>ログインユーザー: {{ Auth::user()->name  }}</p>
+    </div>
 
     <script>
       function deletePost(id) {
